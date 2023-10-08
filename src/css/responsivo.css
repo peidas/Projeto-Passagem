@@ -1,0 +1,117 @@
+@media (max-width: 900px){
+    main::after{
+        background: rgb(57,15,13);
+    background: linear-gradient(0deg, rgba(57,15,13,0.8468677494199536) 52%, rgba(33,2,1,0) 97%);
+        width: 100vw;
+    }
+
+
+   .conteudo{
+    justify-content: flex-end;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: start;
+    padding: 20px;
+    
+   }
+
+   .conteudo .nomepersonagem{
+    font-size: 36px;
+   }
+
+   .conteudo .descricao{
+    max-width: 500px;
+   }
+
+    .listabotoes {
+        position: fixed;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .lista-botoes {
+        list-style: none;
+        padding: 0;
+        
+    }
+    
+    .lista-botoes li {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .botao {
+        display: block;
+        width: 100%; /* Reduzindo a largura dos botões */
+        height: 40px; /* Reduzindo a altura dos botões */
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px; /* Reduzindo o tamanho da fonte */;
+        margin: 5px;
+    }
+    
+    .botao.selecionado {
+        background-color: #240706;
+    }
+    
+}
+
+@media (max-width: 670px){
+    main .personagem .imagem{
+        height: auto;
+    }
+    .listabotoes {
+        position: fixed;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .botao {
+        display: block;
+        width: 100%; /* Reduzindo a largura dos botões */
+        height: 40px; /* Reduzindo a altura dos botões */
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 5px;
+        font-size: px; /* Reduzindo o tamanho da fonte */
+        ;
+    }
+}
+
+@media (max-width: 425px){
+    main .personagem .imagem{
+        height: auto;
+    }
+    .listabotoes {
+        position: fixed;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 1px;
+        min-height: auto;
+    }
+
+    .botao {
+        display: block;
+        width: 97%; /* Reduzindo a largura dos botões */
+        height: 50px; /* Reduzindo a altura dos botões */
+        margin-bottom: 0px;
+        text-align: center;
+        padding: 2px;
+        font-size: 11px; /* Reduzindo o tamanho da fonte */
+        ;
+    }
+
+}

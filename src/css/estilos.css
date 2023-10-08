@@ -1,0 +1,102 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: #240706;
+    background: linear-gradient(90deg, rgba(36,7,6,0.8468677494199536) 52%, rgba(33,2,1,0) 83%);
+}
+
+main .pessoa {
+    display: none;
+    height: 100vh;
+}
+
+.pessoa.selecionada {
+    display: block ;
+}
+
+.pessoa .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position:absolute;
+    top: 0;
+    left: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75vh ;
+    top: 120px;
+    max-width: 60%;
+
+    z-index: 1;
+}
+
+.conteudo .nomepersonagem{
+    color: aliceblue;
+    font-size: 38px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    font-weight: 400;
+    
+
+}
+
+.listabotoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    padding-right: 120px ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    background-color: #2e1616;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.listabotoes .botao{
+    border: none;
+    cursor: pointer;
+}
+
+.botao.selecionado {
+    background-color: #240706; 
+}
